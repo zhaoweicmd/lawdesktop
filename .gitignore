@@ -1,16 +1,19 @@
-# 依赖与构建产物
-node_modules/
-dist/
-.pack/
+# ⛔ 永远不要入库的东西
+# 案件卷宗含当事人真名、真实路径、证件与证据扫描件 —— 一旦推上去就撤不回来。
+cases/
 
 # 插件运行时状态：会话绑定（含本机路径）、审计流水、界面根目录、日志
 .lawcase-plugin/
 
-# 案件卷宗与交付物（含当事人真名/真实路径/证据扫描件）
-cases/
+# 构建与依赖
+node_modules/
+dist/*.tgz
+package.json.no-client
+package.json.with-client
+
+# 交付产物（意见表 / 修订版合同 / 交付包 —— 都是当事人的东西）
 **/out/
-**/.lawcase/
-**/交付包_*/
+**/.lawcase/cache/
 
 # 系统与编辑器
 .DS_Store
@@ -18,6 +21,8 @@ cases/
 .vscode/
 *.log
 *.log.jsonl
+._*
+
+# 临时文件（必须放 .lawcase-plugin/tmp 或系统临时目录）
 *.tmp
 *.bak
-._*

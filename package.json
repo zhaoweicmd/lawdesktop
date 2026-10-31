@@ -23,7 +23,9 @@
     },
     "client": {
       "platform": "web",
-      "inject": []
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
     }
   },
   "license": "MIT",
