@@ -1,0 +1,35 @@
+{
+  "name": "lawcase",
+  "version": "2.58.0",
+  "private": true,
+  "type": "module",
+  "description": "LawCase 律案工作台：把法律服务过程变成可验收的初稿（材料/事实/结论/工序/五道验收）；合同审核可选用宿主已配置的模型直接起草，输出必须过确定性校验并经人工采纳",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaoweicmd/lawdesktop.git"
+  },
+  "homepage": "https://github.com/zhaoweicmd/lawdesktop"
+}

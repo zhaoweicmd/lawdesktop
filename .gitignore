@@ -1,0 +1,23 @@
+# 依赖与构建产物
+node_modules/
+dist/
+.pack/
+
+# 插件运行时状态：会话绑定（含本机路径）、审计流水、界面根目录、日志
+.lawcase-plugin/
+
+# 案件卷宗与交付物（含当事人真名/真实路径/证据扫描件）
+cases/
+**/out/
+**/.lawcase/
+**/交付包_*/
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.log.jsonl
+*.tmp
+*.bak
+._*
