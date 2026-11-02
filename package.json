@@ -1,6 +1,6 @@
 {
   "name": "lawcase",
-  "version": "2.58.0",
+  "version": "2.58.1",
   "private": true,
   "type": "module",
   "description": "LawCase 律案工作台：把法律服务过程变成可验收的初稿（材料/事实/结论/工序/五道验收）；合同审核可选用宿主已配置的模型直接起草，输出必须过确定性校验并经人工采纳",
